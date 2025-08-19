@@ -1,0 +1,11 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "ruff.lint.args": [
+        "--select=E,F,I,N,UP",
+        "--line-length=100"
+    ],
+    "python.linting.enabled": true,
+    "python.analysis.typeCheckingMode": "off"
+}

@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run guessing game",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/guess.py",
+            "console": "integratedTerminal"
+        }
+    ]
+}
