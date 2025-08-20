@@ -1,15 +1,21 @@
-# guess.py (v1)
-# 1) Greet the player
+# guess.py (v2)
 print("Welcome to the guessing game!")
 
-# 2) Ask for input. input("...") shows a prompt and returns a text (type: str)
-user_text = input("Enter any text and press Enter: ")
+# A variable named 'secret' holds our answer (data type: int = integer)
+secret = 7
 
-# 3) Show what we received
-#    Variables (like user_text) are names bound to values.
-#    print(...) can print both fixed strings and variables.
-print("You typed:", user_text)
+# Ask user for a guess. This returns a *text*.
+user_text = input("Enter your guess (whole number): ")
 
-# 4) type(...) shows the data type so you can *see* it's a string
-print("Data type:", type(user_text))
+# Convert text like "42" to the integer 42 using int(...).
+# NOTE: If user_text isn't numeric, int(...) will raise a ValueError. We'll handle that next.
+guess = int(user_text)
 
+# if/elif/else chooses exactly one branch based on conditions.
+# '==' checks equality; '<' and '>' compare numbers.
+if guess == secret:
+    print("Congratulations! You guessed it right.")
+elif guess < secret:
+    print("Your guess is too low.")
+else:
+    print("Your guess is too high.")
